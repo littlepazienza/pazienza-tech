@@ -13,6 +13,11 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('test') {
+            steps {
+                sh 'npm run ng test'
+            }
+        }
         stage('build') {
             steps {
                 sh 'npm run ng build -- --prod --base-href=.'
