@@ -15,7 +15,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'npm run ng build --prod --base-href=.'
+                sh 'npm run ng build -- --prod --base-href=.'
             }
         }
         stage('deploy') {
