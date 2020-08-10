@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pazienza-tech"
+    }
+  },
+  "defaultProject": "pazienza-tech",
+  "cli": {
+    "analytics": "3ef40b44-e013-475e-b4f2-ff32d6d77be6"
+  }
 }

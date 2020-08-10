@@ -15,13 +15,13 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'npm run ng build'
+                sh 'npm run ng build --prod --base-href=.'
             }
         }
         stage('deploy') {
             steps {
                 sh 'mkdir -p /var/www/html/paz.ienza.tech/$GIT_BRANCH'
-                sh 'cp -R ./dist/tmp/* /var/www/html/paz.ienza.tech/$GIT_BRANCH/'
+                sh 'cp -R ./dist/pazienza-tech/* /var/www/html/paz.ienza.tech/$GIT_BRANCH/'
             }
         }
     }
