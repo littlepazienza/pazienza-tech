@@ -18,15 +18,14 @@
 
 @keyframes shrinkLanding {
   from {
-    height: 100vh;
+    /*height: 100vh;*/
     color: white;
     width: 100vw;
     margin-left: 0vw;
-    opacity: 100%;
     text-shadow: black 1px 1px;
   }
   to {
-    height: 10vh;
+    /*height: 10vh;*/
     color: transparent;
     opacity: 75%;
     width: 125vw;
@@ -36,17 +35,16 @@
 
 @keyframes growLanding {
   from {
-    height: 10vh;
+    /*height: 10vh;*/
     color: transparent;
     opacity: 75%;
     width: 125vw;
     margin-left: -12.5vw;
   }
   to {
-    height: 100vh;
+    /*height: 100vh;*/
     color: white;
     width: 100vw;
-    opacity: 100%;
     margin-left: 0;
     text-shadow: black 1px 1px;
   }
