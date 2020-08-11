@@ -19,6 +19,28 @@ export class LandingComponent implements OnInit {
         nav.classList.remove('landing-grow');
         nav.classList.add('landing-shrink');
       }
+      const ind = document.getElementById('indicator');
+      if (document.scrollingElement.scrollTop === 0) {
+        ind.classList.remove('animate__animated', 'animate__fadeOutDown');
+        ind.classList.add('animate__animated', 'animate__fadeInUp');
+      } else {
+        ind.classList.remove('animate__animated', 'animate__fadeInUp');
+        ind.classList.add('animate__animated', 'animate__fadeOutDown');
+      }
+      const wes = document.getElementById('westford');
+      const balt = document.getElementById('baltimore');
+      if (document.scrollingElement.scrollTop <= 100) {
+        wes.classList.remove('animate__animated', 'animate__fadeOutDown');
+        wes.classList.add('animate__animated', 'animate__fadeInUp');
+        balt.classList.remove('animate__animated', 'animate__fadeOutDown');
+        balt.classList.add('animate__animated', 'animate__fadeInUp');
+      } else {
+        wes.classList.remove('animate__animated', 'animate__fadeInUp');
+        wes.classList.add('animate__animated', 'animate__fadeOutDown');
+        balt.classList.remove('animate__animated', 'animate__fadeInUp');
+        balt.classList.add('animate__animated', 'animate__fadeOutDown');
+      }
+
     };
   }
 

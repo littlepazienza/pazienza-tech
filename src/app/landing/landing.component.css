@@ -6,6 +6,19 @@
   background-position: center;
   z-index: -1;
   color: white;
+  padding: 20px;
+}
+
+.indicator {
+  height: 25px;
+  width: 25px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.location {
+  padding: 10px;
+  font-size: 10px;
 }
 
 .landing-shrink {
@@ -27,7 +40,6 @@
     color: white;
     width: 100vw;
     margin-left: 0vw;
-    text-shadow: black 1px 1px;
   }
   to {
     /*height: 10vh;*/
@@ -49,6 +61,5 @@
     color: white;
     width: 100vw;
     margin-left: 0;
-    text-shadow: black 1px 1px;
   }
 }

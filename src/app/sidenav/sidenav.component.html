@@ -2,13 +2,16 @@
 
 
   <div id="side-nav" class="sidenav-shadow rounded-pill">
-    <div id="side-nav-panel" class="sidenav mb-5 d-flex flex-row rounded-pill border border-dark background-ben" (click)="toggle()">
-      <button id="hamburger" hidden class="hamburger hamburger--spin" type="button">
-        <span class="hamburger-box align-self-center">
-           <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      <div class="align-self-center" style="margin-left: 75px;"><img width="30px" height="30px" src="https://banner2.cleanpng.com/20180716/tza/kisspng-github-computer-icons-clip-art-gits-5b4d20ab1f4131.145288281531781291128.jpg"></div>
+    <div id="side-nav-panel" class="sidenav mb-5 d-flex flex-row rounded-pill border border-dark">
+<!--      <button id="hamburger" hidden class="hamburger hamburger&#45;&#45;spin" type="button">-->
+<!--        <span class="hamburger-box align-self-center">-->
+<!--           <span class="hamburger-inner"></span>-->
+<!--        </span>-->
+<!--      </button>-->
+      <button mat-raised-button class="background-ben align-self-left rounded-pill" (click)="toggle($event)"></button>
+      <a href="https://github.com/littlepazienza" mat-raised-button class="background-github" style="margin-left: 75px;"
+              matTooltip="littlepazienza">
+      </a>
     </div>
 
   </div>
