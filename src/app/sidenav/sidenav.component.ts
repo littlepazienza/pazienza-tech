@@ -13,7 +13,7 @@ export class SidenavComponent implements OnInit {
   }
   toggle() {
     const nav = document.getElementById('side-nav');
-    const nav_panel = nav.firstElementChild;
+    const nav_panel = document.getElementById('side-nav-panel');
     const hamburger = document.getElementById('hamburger');
     if (!this.open) {
       nav.style.animationDirection = '0.2s';
