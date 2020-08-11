@@ -1,0 +1,51 @@
+.landing {
+  background-color: black;
+  background-image: url("src/assets/img/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  color: white;
+}
+
+.landing-shrink {
+  animation: shrinkLanding 1s forwards;
+}
+
+.landing-grow {
+  animation: growLanding 1s forwards;
+}
+
+@keyframes shrinkLanding {
+  from {
+    height: 100vh;
+    color: white;
+    width: 100vw;
+    margin-left: 0vw;
+    text-shadow: black 1px 1px;
+  }
+  to {
+    height: 10vh;
+    color: transparent;
+    opacity: 75%;
+    width: 125vw;
+    margin-left: -12.5vw;
+  }
+}
+
+@keyframes growLanding {
+  from {
+    height: 10vh;
+    color: transparent;
+    opacity: 75%;
+    width: 125vw;
+    margin-left: -12.5vw;
+  }
+  to {
+    height: 100vh;
+    color: white;
+    width: 100vw;
+    margin-left: 0vw;
+    text-shadow: black 1px 1px;
+  }
+}
