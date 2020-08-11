@@ -9,11 +9,18 @@
 }
 
 .landing-shrink {
-  animation: shrinkLanding 1s forwards;
+  opacity: 75%;
+  transition: opacity 1s;
+}
+
+@media screen and (min-width: 300px) {
+  .landing-shrink {animation: shrinkLanding 1s forwards;}
+  .landing-grow {animation: growLanding 1s forwards;}
 }
 
 .landing-grow {
-  animation: growLanding 1s forwards;
+  opacity: 100%;
+  transition: opacity 1s;
 }
 
 @keyframes shrinkLanding {
@@ -27,7 +34,6 @@
   to {
     /*height: 10vh;*/
     color: transparent;
-    opacity: 75%;
     width: 125vw;
     margin-left: -12.5vw;
   }
@@ -37,7 +43,6 @@
   from {
     /*height: 10vh;*/
     color: transparent;
-    opacity: 75%;
     width: 125vw;
     margin-left: -12.5vw;
   }
