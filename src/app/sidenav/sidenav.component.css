@@ -32,27 +32,79 @@
 }
 
 .background-ben {
-  width: auto;
-  height: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
+  height: 50px;
+  width: 50px;
+  margin-left: -1px;
+  margin-top: -1px;
   border: solid black 2px;
   position: absolute;
+  background-color: transparent;
   background-image: url("https://img.icons8.com/dotty/100/000000/user.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 40px 40px;
+}
+
+.rotate-out {
+  animation: rotateOut .4s forwards;
+}
+
+.rotate-in {
+  animation: rotateIn .3s forwards;
+}
+
+@keyframes rotateOut {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }
 
 .background-github {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  margin-top: 5px;
-  background-image: url("src/assets/img/GitHub_Logo.png");
+  width: 30px ;
+  height: 30px;
+  background-image: url("src/assets/img/github.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 20px 20px;
+}
+
+.background-instagram {
+  width: 30px;
+  height: 30px;
+  background-image: url("src/assets/img/instagram.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.background-email {
+  width: 30px;
+  height: 30px;
+  background-image: url("https://img.icons8.com/pastel-glyph/64/000000/secured-letter--v2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.background-linkedin {
+  width: 30px;
+  height: 30px;
+  background-image: url("https://img.icons8.com/fluent/100/000000/linkedin.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 

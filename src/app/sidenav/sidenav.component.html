@@ -2,16 +2,27 @@
 
 
   <div id="side-nav" class="sidenav-shadow rounded-pill">
-    <div id="side-nav-panel" class="sidenav mb-5 d-flex flex-row rounded-pill border border-dark">
+    <div id="side-nav-panel" class="sidenav mb-5 rounded-pill border border-dark">
 <!--      <button id="hamburger" hidden class="hamburger hamburger&#45;&#45;spin" type="button">-->
 <!--        <span class="hamburger-box align-self-center">-->
 <!--           <span class="hamburger-inner"></span>-->
 <!--        </span>-->
 <!--      </button>-->
-      <button mat-raised-button class="background-ben align-self-left rounded-pill" (click)="toggle($event)"></button>
-      <a href="https://github.com/littlepazienza" mat-raised-button class="background-github" style="margin-left: 75px;"
-              matTooltip="littlepazienza">
-      </a>
+      <button mat-mini-fab id="hamburger" class="background-ben align-self-center d-flex rounded-pill" (click)="toggle($event)"></button>
+      <div class="d-flex flex-row justify-content-between h-100" style="margin-left: 75px; margin-right: 25px;">
+        <a href="https://github.com/littlepazienza" mat-mini-fab color="light" class="background-github align-self-center"
+                matTooltip="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/benpazienza/" mat-mini-fab color="light" class="background-linkedin align-self-center"
+        matTooltip="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/benpazienza/" mat-mini-fab color="light" class="background-instagram align-self-center"
+           matTooltip="Instagram">
+        </a>
+        <a [cdkCopyToClipboard]="email" (click)="openSnackBar()" mat-mini-fab color="light" class="background-email align-self-center"
+           matTooltip="Copy Email">
+        </a>
+      </div>
     </div>
 
   </div>
