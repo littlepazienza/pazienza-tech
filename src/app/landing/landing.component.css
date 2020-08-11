@@ -9,7 +9,6 @@
 }
 
 .landing-shrink {
-  opacity: 75%;
   transition: opacity 1s;
 }
 
@@ -19,7 +18,6 @@
 }
 
 .landing-grow {
-  opacity: 100%;
   transition: opacity 1s;
 }
 
