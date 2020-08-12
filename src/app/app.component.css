@@ -243,11 +243,16 @@ footer a {
   padding: 10px;
 }
 
+.card-header {
+  background-image: url('https://img.icons8.com/dotty/80/000000/user.png');
+  background-color: gray;
+  background-size: cover;
+}
+
 #main {
   transition: margin-left .5s;
   padding: 20px;
 }
-
 
 .github-star-badge:hover {
   background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);

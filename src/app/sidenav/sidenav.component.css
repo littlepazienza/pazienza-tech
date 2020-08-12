@@ -6,11 +6,12 @@
   z-index: 1; /* Stay on top */
   top: 0px; /* Stay at the top */
   right: 0px;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  overflow-y: hidden;
+  /*overflow-x: hidden; !* Disable horizontal scroll *!*/
+  /*overflow-y: hidden;*/
 }
 
 .sidenav-shadow {
+  animation-iteration-count: infinite;
   height: 100%; /* 100% Full-height */
   width: 100px; /* 0 width - change this with JavaScript */
   position: absolute; /* Stay in place */
@@ -20,6 +21,7 @@
   transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
 
 }
+
 
 .sidenav {
   height: 50px;
@@ -71,24 +73,6 @@
   }
 }
 
-.background-github {
-  width: 30px ;
-  height: 30px;
-  background-image: url("src/assets/img/github.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-}
-
-.background-instagram {
-  width: 30px;
-  height: 30px;
-  background-image: url("src/assets/img/instagram.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-}
-
 .background-email {
   width: 30px;
   height: 30px;
@@ -96,16 +80,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px 20px;
+  transition: all .5s;
 }
 
-.background-linkedin {
-  width: 30px;
-  height: 30px;
-  background-image: url("https://img.icons8.com/fluent/100/000000/linkedin.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-}
 
 
 

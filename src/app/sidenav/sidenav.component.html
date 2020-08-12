@@ -1,7 +1,7 @@
 <div class="sidenav-container">
 
 
-  <div id="side-nav" class="sidenav-shadow rounded-pill">
+  <div id="side-nav" class="sidenav-shadow rounded-pill 'animate__animated', 'animate__pulse'">
     <div id="side-nav-panel" class="sidenav mb-5 rounded-pill border border-dark">
 <!--      <button id="hamburger" hidden class="hamburger hamburger&#45;&#45;spin" type="button">-->
 <!--        <span class="hamburger-box align-self-center">-->
@@ -10,23 +10,20 @@
 <!--      </button>-->
       <button mat-mini-fab id="hamburger" class="background-ben align-self-center d-flex rounded-pill" (click)="toggle($event)"></button>
       <div class="d-flex flex-row justify-content-between h-100" style="margin-left: 75px; margin-right: 25px;">
-        <a href="https://github.com/littlepazienza" mat-mini-fab color="light" class="background-github align-self-center"
-                matTooltip="GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/benpazienza/" mat-mini-fab color="light" class="background-linkedin align-self-center"
-        matTooltip="LinkedIn">
-        </a>
-        <a href="https://www.instagram.com/benpazienza/" mat-mini-fab color="light" class="background-instagram align-self-center"
-           matTooltip="Instagram">
-        </a>
-        <a [cdkCopyToClipboard]="email" (click)="openSnackBar()" mat-mini-fab color="light" class="background-email align-self-center"
+<!--        <a href="https://github.com/littlepazienza" mat-mini-fab color="light" class="background-github align-self-center"-->
+<!--                matTooltip="GitHub">-->
+<!--        </a>-->
+        <div id="tutorial" class="d-none w-100 align-self-center">Click me for links!</div>
+        <app-icon id="github-icon" width="30px" height="30px" bgSize="20px 20px" url="url('assets/img/github.png')" href="https://github.com/littlepazienza" matTooltip="Github" style="align-self: center"></app-icon>
+        <app-icon id="linkedin-icon" width="30px" height="30px" bgSize="20px 20px" url="url('https://img.icons8.com/fluent/100/000000/linkedin.png')" href="https://www.linkedin.com/in/benpazienza/" matTooltip="LinkedIn" style="align-self: center"></app-icon>
+        <app-icon id="instagram-icon" width="30px" height="30px" bgSize="20px 20px" url="url('assets/img/instagram.png')" href="https://www.instagram.com/benpazienza/" matTooltip="Instagram" style="align-self: center"></app-icon>
+        <a id="email-icon" [cdkCopyToClipboard]="email" (click)="openSnackBar()" mat-mini-fab color="light" class="background-email align-self-center"
            matTooltip="Copy Email">
         </a>
       </div>
     </div>
 
   </div>
-
 </div>
 
 
