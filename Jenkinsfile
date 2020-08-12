@@ -25,8 +25,12 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'mkdir -p /var/www/html/paz.ienza.tech/$GIT_BRANCH'
-                sh 'cp -R ./dist/pazienza-tech/* /var/www/html/paz.ienza.tech/$GIT_BRANCH/'
+                sh '
+                  version=$(git describe)
+                  sed -i "s/<!--build_number-->/${version}/g" ./dist/pazienza-tech/index.html
+                  mkdir -p /var/www/html/paz.ienza.tech/$GIT_BRANCH\
+                  cp -R ./dist/pazienza-tech/* /var/www/html/paz.ienza.tech/$GIT_BRANCH/
+                '
             }
         }
     }
