@@ -8,5 +8,5 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .build-number {
-  font-size: 10px; font-family: Roboto, 'Helvetica Neue', sans-serif !important ;padding-top: 50px;padding-bottom: 10px;
+  font-size: 10px; font-family: Roboto, 'Helvetica Neue', sans-serif !important ;padding-top: 50px;padding-bottom: 10px;position: absolute; width: 100%;
 }
