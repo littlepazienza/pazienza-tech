@@ -27,7 +27,7 @@
   height: 50px;
   position: relative; /* Stay in place */
   /*background-color: green; !* Black*!*/
-  background-color: gray;
+  background-color: green;
   overflow-x: hidden; /* Disable horizontal scroll */
   margin: 25px;
   overflow-y: hidden;

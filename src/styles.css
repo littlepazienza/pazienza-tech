@@ -7,3 +7,6 @@ body { background-color: black; margin: 0;}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.build-number {
+  font-size: 10px; font-family: Roboto, 'Helvetica Neue', sans-serif !important ;padding-top: 50px;padding-bottom: 10px;
+}
