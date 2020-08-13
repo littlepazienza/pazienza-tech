@@ -10,7 +10,7 @@ export class LandingComponent implements OnInit {
   constructor() { }
 
   scrollToContent($event) {
-    document.getElementById('education').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+    document.getElementById('card').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
   }
 
   ngOnInit(): void {
