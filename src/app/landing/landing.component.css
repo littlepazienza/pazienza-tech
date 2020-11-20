@@ -16,6 +16,12 @@
   color: white;
 }
 
+.indicator:hover {
+  height: 35px;
+  width: 35px;
+  color: whitesmoke;
+}
+
 .location {
   padding: 10px;
   font-size: 10px;
