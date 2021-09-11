@@ -17,6 +17,9 @@ import {ClipboardModule} from '@angular/cdk/clipboard';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { IconComponent } from './icon/icon.component';
 import {MatCardModule} from '@angular/material/card';
+import { ResumeComponent } from './resume/resume.component';
+import { MainComponent } from './main/main.component';
+import { ResumePageComponent } from './resume-page/resume-page.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import {MatCardModule} from '@angular/material/card';
     LandingComponent,
     SidenavComponent,
     IconComponent,
+    ResumeComponent,
+    MainComponent,
+    ResumePageComponent,
   ],
   imports: [
     BrowserModule,

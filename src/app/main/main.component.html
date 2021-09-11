@@ -1,0 +1,77 @@
+<app-sidenav></app-sidenav>
+<app-landing></app-landing>
+<div style="height: 100vh"></div>
+<div class="bg-light shadow d-flex" style="padding-bottom: 40px; padding-top: 40px;">
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-3">
+        <mat-card id="card" class="bg-light text-dark">
+          <mat-card-header>
+            <div mat-card-avatar class="card-header"></div>
+            <mat-card-title>Benjamin Pazienza</mat-card-title>
+            <mat-card-subtitle class="text-dark"><a matTooltip="This is a Rocket League Reference" href="https://www.reddit.com/r/RocketLeague/comments/csme8p/spinning_car_wizard/">Spinning Car Wizard</a></mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image class="d-none d-lg-block" src="assets/img/profile.png">
+          <mat-card-content>
+            <p>
+              I am a 4th year Computer Science BS candidate at <a matTooltip="Loyola's Website" href="https://loyola.edu">Loyola University Maryland</a>. I am currently working as a software development intern at <a matTooltip="Alert Innovation's Website" href="https://alertinnovation.com">Alert Innovation</a>. My hobbies include skateboarding, soccer, chess, and video-games! I am from Westford, MA and currently reside in Baltimore, MD.
+            </p>
+          </mat-card-content>
+          <!--          <mat-card-actions>-->
+          <!--&lt;!&ndash;            <button mat-button>Contact</button>&ndash;&gt;-->
+          <!--&lt;!&ndash;            <button mat-button>SHARE</button>&ndash;&gt;-->
+          <!--          </mat-card-actions>-->
+
+
+          <mat-card-footer>
+            <ul class="list-group section position-sticky">
+              <li class="list-group-item"><a routerLink="/resume" >Resume</a></li>
+            </ul>
+          </mat-card-footer>
+        </mat-card>
+
+      </div>
+      <div class="col">
+        <app-resume-page></app-resume-page>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="area d-flex" style="background-color: green; padding-top: 50px; padding-bottom: 150px">
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <div class="container">
+    <div class="row d-flex justify-content-center m-4">
+      <div class="col-3 d-none d-md-block"></div>
+      <div class="col d-flex justify-content-between">
+        <div class="text-center animate__animated animate__pulse" style="animation-iteration-count: infinite; animation-duration: 5s">
+          <app-icon width="60px" height="60px" bgSize="50px 20px" url="url('assets/img/GitHub_Logo.png')" href="https://github.com/littlepazienza/pazienza-tech" matTooltip="Github" style="align-self: center"></app-icon>
+          <p style="margin-top: 10px; font-size: 12px; font-family: Roboto, 'Helvetica Neue', sans-serif !important;">Source Code</p>
+        </div>
+        <div class="text-center animate__animated animate__pulse" style="animation-iteration-count: infinite; animation-duration: 6s">
+          <app-icon width="60px" height="60px" bgSize="40px 50px" url="url('assets/img/jenkins.png')" href="http://jenkins.paz.ienza.tech/job/pazienza-tech/job/master" matTooltip="Jenkins" style="align-self: center"></app-icon>
+          <p style="margin-top: 10px; font-size: 12px; font-family: Roboto, 'Helvetica Neue', sans-serif !important;">CI/CD</p>
+        </div>
+        <div class="text-center animate__animated animate__pulse" style="animation-iteration-count: infinite; animation-duration: 4s">
+          <app-icon width="60px" height="60px" bgSize="50px 50px" url="url('assets/img/angular-color.png')" href="https://angular.io" matTooltip="Angular" style="align-self: center"></app-icon>
+          <p style="margin-top: 10px; font-size: 12px; font-family: Roboto, 'Helvetica Neue', sans-serif !important;">Framework</p>
+        </div>
+        <div class="text-center animate__animated animate__pulse" style="animation-iteration-count: infinite; animation-duration: 3s">
+          <app-icon width="60px" height="60px" bgSize="40px 50px" url="url('https://img.icons8.com/color/100/000000/linode.png')" href="http://linode.com" matTooltip="Linode" style="align-self: center"></app-icon>
+          <p style="margin-top: 10px; font-size: 12px; font-family: Roboto, 'Helvetica Neue', sans-serif !important;">Hosting</p>
+        </div>
+      </div>
+      <div class="col-3 d-none d-md-block"></div>
+    </div>
+  </div>
+</div>
