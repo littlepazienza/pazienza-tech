@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ResumePageComponent } from './resume-page/resume-page.component';
+import { LarkComponent } from './lark/lark.component';
 import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
     { path: '', component: MainComponent },
     { path: 'resume', component: ResumePageComponent },
+    { path: 'lark', component: LarkComponent },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }]

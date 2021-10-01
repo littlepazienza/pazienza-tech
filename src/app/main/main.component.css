@@ -6,6 +6,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {font-family: 'EB Garamond', serif !important;}
+
 h1,
 h2,
 h3,
