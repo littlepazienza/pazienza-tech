@@ -17,7 +17,7 @@ export class LarkComponent implements OnInit {
   ngOnInit(): void {
     this.answers = ['', '', '', '', ''];
     this.currentQuestion = 1;
-    this.correctAnswers = ['ABD', 'B', 'C', 'C', 'A'];
+    this.correctAnswers = ['ABD', 'B', 'C', 'C', 'D'];
     this.numQuestions = 5;
     document.getElementById('prev').setAttribute('disabled', 'true');
   }
@@ -50,8 +50,17 @@ export class LarkComponent implements OnInit {
         return;
       } else {
         console.log('Done');
-        alert(`${this.calculateScore()}%`);
-        // TODO: Actually do something with the score
+        let score = this.calculateScore();
+        document.getElementById('complete-window').classList.remove('d-none');
+        document.getElementById('completed').classList.add('animate__bounceIn');
+        if(score == 100) {
+          document.getElementById('completed-success').classList.remove('d-none');
+        } else {
+          document.getElementById('completed-failure').classList.remove('d-none');
+        }
+        document.getElementById('score').innerText = `${score}%`;
+        document.getElementById('prev').setAttribute('disabled', 'true');
+        document.getElementById('next').setAttribute('disabled', 'true');
         return;
       }
     }
@@ -64,6 +73,10 @@ export class LarkComponent implements OnInit {
 
     this.showCurrentQuestion();
     this.updateButtons();
+  }
+
+  reload() {
+    location.reload();
   }
 
   answer(input) {

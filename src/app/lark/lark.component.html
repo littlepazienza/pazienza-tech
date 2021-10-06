@@ -156,6 +156,23 @@
   </div>
 </div>
 
+<div class="complete-window d-none" id="complete-window">
+  <div class="complete animate__animated m-auto" id="completed">
+    <p>Your score was <span id="score"></span></p>
+    <div id="completed-success" class="d-none">
+      <p>Here is your prize!</p>
+      <div class="reward"></div>
+      <div class="glue-horizontal"></div>
+      <a class="btn btn-secondary center" (click)='reload()'>All done!</a>
+    </div>
+    <div id="completed-failure" class="d-none">
+      <p>Better luck next time!</p>
+      <div class="glue-horizontal"></div>
+      <a class="btn btn-secondary" (click)='reload()'>Try again!</a>
+    </div>
+  </div>
+</div>
+
 <svg version="1.1" id="home-anim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1820 1080" style="enable-background:new 0 0 1820 1080;" xml:space="preserve">
 

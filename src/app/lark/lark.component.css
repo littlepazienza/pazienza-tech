@@ -15,6 +15,39 @@
   flex-direction: column;
 }
 
+.complete-window {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.complete {
+  font-family: jetbrains;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  box-shadow: 3px 3px 5px;
+}
+
+.reward {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  background-image: url('../../assets/img/reward.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .m-auto * {
   font-family: inherit !important;
 }
