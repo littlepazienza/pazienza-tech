@@ -26,7 +26,7 @@ pipeline {
         stage('deploy') {
             steps {
                 sh '''
-                  git pull --tags
+                  git pull --tags origin $GIT_BRANCH
                   version=$(git describe)
                   sed -i '' -e "s/<!--build_number-->/${version}/g" ./dist/pazienza-tech/index.html
                   mkdir -p /usr/local/homebrew/var/www/html/paz.ienza.tech/$GIT_BRANCH
