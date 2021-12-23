@@ -1,4 +1,4 @@
-[![Build Status](https://jenkins.paz.ienza.tech/job/pazienza-tech/job/master/badge/icon)](https://jenkins.paz.ienza.tech/job/pazienza-tech/job/master/)
+[![Build Status](https://jenkins.paz.ienza.tech/buildStatus/icon?job=pazienza-tech%2Fmaster)](https://jenkins.paz.ienza.tech/job/pazienza-tech/job/master/)
 
 # PazienzaTech
 
