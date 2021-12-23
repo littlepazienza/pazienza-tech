@@ -28,7 +28,7 @@ pipeline {
                 sh '''
                   git pull --tags origin $GIT_BRANCH
                   version=$(git describe)
-                  sed -i '' -e "s/<!--build_number-->/${version}/g" $WORKSPACE/dist/pazienza-tech/index.html
+                  sed -i "" -e "s/<!--build_number-->/${version}/g" $WORKSPACE/dist/pazienza-tech/index.html
                   mkdir -p /var/www/html/paz.ienza.tech/$GIT_BRANCH
                   cp -R $WORKSPACE/dist/pazienza-tech/* /var/www/html/paz.ienza.tech/$GIT_BRANCH/
                 '''
