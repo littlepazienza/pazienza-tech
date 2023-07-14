@@ -20,7 +20,7 @@ import {MatCardModule} from '@angular/material/card';
 import { ResumeComponent } from './resume/resume.component';
 import { MainComponent } from './main/main.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
-import { LarkComponent } from './lark/lark.component';
+import { ElineComponent } from './eline/eline.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { LarkComponent } from './lark/lark.component';
     ResumeComponent,
     MainComponent,
     ResumePageComponent,
-    LarkComponent,
+    ElineComponent,
   ],
   imports: [
     BrowserModule,
