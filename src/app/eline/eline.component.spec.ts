@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LarkComponent } from './lark.component';
+import { ElineComponent } from './eline.component';
 
-describe('LarkComponent', () => {
-  let component: LarkComponent;
-  let fixture: ComponentFixture<LarkComponent>;
+describe('ElineComponent', () => {
+  let component: ElineComponent;
+  let fixture: ComponentFixture<elineComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LarkComponent ]
+      declarations: [ elineComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LarkComponent);
+    fixture = TestBed.createComponent(elineComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
