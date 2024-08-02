@@ -1,5 +1,3 @@
-[![Build Status](https://jenkins.paz.ienza.tech/buildStatus/icon?job=pazienza-tech%2Fmaster)](https://jenkins.paz.ienza.tech/job/pazienza-tech/job/master/)
-
 # PazienzaTech
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
