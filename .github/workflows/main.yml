@@ -22,7 +22,7 @@ jobs:
       - run: npm install
       - run: npm run ng build -- --prod --base-href=.
       - run: sed -i -e "s/<!--build_number-->/${version}/g" ./dist/pazienza-tech/index.html
-      - run: tar -czf website.tar.gz *
+      - run: tar -czf website.tar.gz ./dist/pazienza-tech/*
 
 
       - name: Archive code coverage results
