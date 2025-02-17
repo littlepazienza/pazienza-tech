@@ -13,8 +13,8 @@ export class PortfolioComponent {
     {
       type: 'video',
       src: 'assets/gallery/can_i_kick_it.MP4',
-      name: 'Beautiful Landscape',
-      desc: 'A stunning landscape photo'
+      name: 'Mr Dinkins',
+      desc: 'Animated on Procreate Dreams. The top dog Mr Dinkins unwinding to the song: "Can I Kick It" by A Tribe Called Quest'
     }
     // Add more media items (images and videos) here...
   ];
