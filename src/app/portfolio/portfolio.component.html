@@ -1,0 +1,46 @@
+<html>
+  <head>
+  </head>
+  <body>
+
+    <!-- Portfolio Title Section -->
+    <header class="portfolio-header">
+      <h1>Ben's Portfolio</h1>
+    </header>
+
+    <!-- Gallery Container -->
+    <div class="gallery-container">
+      <div class="gallery" *ngFor="let media of mediaList; let i = index">
+        <a href="javascript:void(0)" (click)="openModal(i)">
+          <img *ngIf="media.type === 'image'" [src]="media.src" [alt]="media.name" />
+          <video *ngIf="media.type === 'video'" [src]="media.src" alt="Video"></video>
+        </a>
+        <!-- Display media name and description -->
+        <div class="name">{{ media.name }}</div>
+        <div class="desc">{{ media.desc }}</div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div *ngIf="isModalOpen" id="myModal" class="modal">
+      <span class="close" (click)="closeModal()">&times;</span>
+
+      <!-- Modal Content: Image or Video -->
+      <div *ngIf="modalMediaType === 'image'">
+        <img class="modal-content" [src]="modalMediaSrc" [alt]="modalMediaName">
+      </div>
+      <div *ngIf="modalMediaType === 'video'">
+        <video class="modal-content" [src]="modalMediaSrc" controls>
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Caption (Description) -->
+      <div class="caption">
+        <strong>{{ modalMediaName }}</strong> <br/>
+        {{ modalMediaDesc }}
+      </div>
+    </div>
+
+  </body>
+</html>

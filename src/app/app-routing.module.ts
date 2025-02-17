@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ResumePageComponent } from './resume-page/resume-page.component';
-import { ElineComponent } from './eline/eline.component';
 import { MainComponent } from './main/main.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
     { path: '', component: MainComponent },
     { path: 'resume', component: ResumePageComponent },
-    { path: 'eline', component: ElineComponent },
+    { path: 'portfolio', component: PortfolioComponent },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }]

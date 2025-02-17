@@ -1,0 +1,1 @@
+# Gallery media placeholder directory
