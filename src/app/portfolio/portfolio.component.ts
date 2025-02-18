@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import imageData from 'src/assets/gallery/gallery.json';
+import imageData from '../../assets/gallery/gallery.json';
 
 export interface ImageData {
   type: string,
