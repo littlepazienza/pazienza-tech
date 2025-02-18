@@ -1,4 +1,18 @@
 import { Component } from '@angular/core';
+import imageData from 'src/assets/gallery/gallery.json';
+
+export interface ImageData {
+  type: string,
+  src: string,
+  name: string,
+  desc: string,
+  supportingFiles: ImageReferences[]
+}
+
+export interface ImageReferences {
+  type: string,
+  src: string,
+}
 
 @Component({
   selector: 'app-portfolio',
@@ -6,45 +20,32 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent {
+  // Modal toggle
   isModalOpen = false;
+  isFullscreenModalOpen = false;
   
-  // Sample list of media items (images and videos)
-  mediaList = [
-    {
-      type: 'video',
-      src: 'assets/gallery/can_i_kick_it.MP4',
-      name: 'Mr Dinkins',
-      desc: 'Animated on Procreate Dreams. The top dog Mr Dinkins unwinding to the song: "Can I Kick It" by A Tribe Called Quest'
-    }
-    // Add more media items (images and videos) here...
-  ];
-
   // Modal data
-  modalMediaSrc: string = '';
-  modalMediaType: string = ''; // 'image' or 'video'
-  modalMediaName: string = '';
-  modalMediaDesc: string = '';
+  selected: ImageData;
+  selectedFullscreen: ImageReferences;
+
+  // Image data from the json
+  images: ImageData[] = imageData;
 
   openModal(index: number): void {
-    const selectedMedia = this.mediaList[index];
-    this.modalMediaSrc = selectedMedia.src;
-    this.modalMediaType = selectedMedia.type;
-    this.modalMediaName = selectedMedia.name;
-    this.modalMediaDesc = selectedMedia.desc;
+    this.selected = this.images[index];
     this.isModalOpen = true;
-
-    // Check if the media is a video and unmute it on interaction
-    if (this.modalMediaType === 'video') {
-      setTimeout(() => {
-        const videoElement = document.querySelector('.modal-content') as HTMLVideoElement;
-        if (videoElement) {
-          videoElement.muted = false;  // Unmute video after modal is open
-        }
-      }, 100);
-    }
   }
 
+  openFullscreenModal(media: ImageReferences): void {
+    this.selectedFullscreen = media;
+    this.isFullscreenModalOpen = true;
+  }
+  
   closeModal(): void {
     this.isModalOpen = false;
+  }
+  
+  closeFullscreenModal(): void {
+    this.isFullscreenModalOpen = false;
   }
 }

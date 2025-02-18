@@ -127,3 +127,55 @@
     cursor: pointer;
   }
   
+  /* Modal Media Container */
+.modal-media-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Enlarge Selected Media in First Modal */
+.large-media {
+  width: 100%;
+  max-width: 80vw; /* Adjust width to viewport */
+  max-height: 60vh; /* Prevent overflow */
+  object-fit: contain;
+  display: block;
+  margin: auto; /* Center the media */
+}
+/* Full-Screen Modal */
+.full-screen-modal {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+/* Full-Screen Image/Video */
+.full-screen-content {
+  max-width: 90vw; /* Adjust to viewport width */
+  max-height: 90vh; /* Adjust to viewport height */
+  object-fit: contain;
+}
+
+/* Close Button for Full-Screen Modal */
+.full-screen-modal .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.full-screen-modal .close:hover {
+  color: #bbb;
+  cursor: pointer;
+}
+

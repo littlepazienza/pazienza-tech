@@ -10,7 +10,7 @@
 
     <!-- Gallery Container -->
     <div class="gallery-container">
-      <div class="gallery" *ngFor="let media of mediaList; let i = index">
+      <div class="gallery" *ngFor="let media of images; let i = index">
         <a href="javascript:void(0)" (click)="openModal(i)">
           <img *ngIf="media.type === 'image'" [src]="media.src" [alt]="media.name" />
           <video *ngIf="media.type === 'video'" [src]="media.src" alt="Video"></video>
@@ -26,21 +26,43 @@
       <span class="close" (click)="closeModal()">&times;</span>
 
       <!-- Modal Content: Image or Video -->
-      <div *ngIf="modalMediaType === 'image'">
-        <img class="modal-content" [src]="modalMediaSrc" [alt]="modalMediaName">
-      </div>
-      <div *ngIf="modalMediaType === 'video'">
-        <video class="modal-content" [src]="modalMediaSrc" controls>
+      <div class="modal-media-container">
+        <img *ngIf="modalMediaType === 'image'" class="large-media" [src]="selected.src" [alt]="selected.name">
+        <video *ngIf="selected.type === 'video'" class="large-media" [src]="selected.src" controls>
           Your browser does not support the video tag.
         </video>
       </div>
-
+      
       <!-- Caption (Description) -->
       <div class="caption">
-        <strong>{{ modalMediaName }}</strong> <br/>
-        {{ modalMediaDesc }}
+        <strong>{{ selected.name }}</strong> <br/>
+        {{ selected.desc }}
+      </div>
+
+      <br><hr><br>
+
+      <!-- Additional Media from the Directory -->
+      <div class="gallery-container">
+        <!-- Loop through additional media items in the directory (this is a placeholder) -->
+        <!-- Example of displaying additional images or videos -->
+        <div class="gallery" *ngFor="let media of selected.supportingFiles ">
+          <a href="javascript:void(0)" (click)="openFullscreenModal(media)">
+            <img *ngIf="media.type === 'image'" [src]="media.src"/>
+            <video *ngIf="media.type === 'video'" [src]="media.src" alt="Video"></video>
+          </a>
+        </div>
       </div>
     </div>
+    <!-- The Full-Screen Modal (Only for Supporting Files) -->
+    <div *ngIf="isFullscreenModalOpen" id="fullScreenModal" class="full-screen-modal">
+      <span class="close" (click)="closeFullscreenModal()">&times;</span>
 
+      <div *ngIf="selectedFullscreen?.type === 'image'">
+        <img class="full-screen-content" [src]="selectedFullscreen.src">
+      </div>
+      <div *ngIf="selectedFullscreen.type === 'video'">
+        <video class="full-screen-content" [src]="selectedFullscreen.src" controls></video>
+      </div>
+    </div>
   </body>
 </html>

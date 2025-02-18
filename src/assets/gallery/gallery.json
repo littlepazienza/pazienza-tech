@@ -1,0 +1,26 @@
+[
+    {
+        "type": "video",
+        "src": "assets/gallery/mr_dinkins/can_i_kick_it.MP4",
+        "name": "Mr Dinkins",
+        "desc": "Animated on Procreate Dreams. The top dog Mr Dinkins unwinding to the song: \"Can I Kick It\" by A Tribe Called Quest",
+        "supportingFiles": [
+            {
+                "type": "image",
+                "src": "assets/gallery/mr_dinkins/IMG_0057.PNG"
+            },
+            {
+                "type": "image",
+                "src": "assets/gallery/mr_dinkins/IMG_0058.PNG"
+            },
+            {
+                "type": "image",
+                "src": "assets/gallery/mr_dinkins/IMG_0059.PNG"
+            },
+            {
+                "type": "image",
+                "src": "assets/gallery/mr_dinkins/IMG_0060.PNG"
+            }
+        ]
+    }
+]
