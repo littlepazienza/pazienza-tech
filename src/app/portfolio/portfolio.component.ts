@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import imageData from '../../assets/gallery/gallery.json';
 
 export interface ImageData {
   type: string,
@@ -29,7 +28,16 @@ export class PortfolioComponent {
   selectedFullscreen: ImageReferences;
 
   // Image data from the json
-  images: ImageData[] = imageData;
+  images: ImageData[];
+
+  async ngOnInit() {
+    try {
+      const response = await fetch('assets/gallery/gallery.json'); // Adjust path as needed
+      this.images = await response.json();
+    } catch (error) {
+      console.error('Error loading JSON:', error);
+    }
+  }
 
   openModal(index: number): void {
     this.selected = this.images[index];
